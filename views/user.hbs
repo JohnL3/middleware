@@ -1,0 +1,10 @@
+<h1>{{ heading }}</h1>
+<p>Welcome to <b>{{ name }}</b></p>
+
+
+{{# each anyArray as |val key|}}
+    {{ key }}: {{ val }}<br>
+{{/each}}
+<div>
+	<p> {{name}} was <b>{{action}}</b></p>
+	</div>

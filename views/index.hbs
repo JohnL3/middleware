@@ -1,0 +1,21 @@
+
+<h1>{{ title }}</h1>
+
+{{# if condition }}
+	<h3>Welcome to {{ name }}</h3>
+    <p>{{name}} was <b>{{action}}</b>
+	</p><br>
+{{/if}}
+
+{{# each anyArray as |val key|}}
+    {{ key }}: {{ val }}<br>
+{{/each}}
+<div>
+	{{# if loggedin}}
+	<a href="/logout">Logout</a>
+	{{else if signedUp}}
+	<a href="/login">Login</a>
+	{{else}}
+	<a href="/signup">Signup</a>
+	{{/if}}
+	</div>
